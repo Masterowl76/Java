@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Button Example</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="300" height="150"></canvas>
+    <button onclick="changeColor()">Make Canvas Blue</button>
+
+    <script>
+        function changeColor() {
+            const canvas = document.getElementById('myCanvas');
+            const context = canvas.getContext('2d');
+            context.fillStyle = '#007bff'; // Blue color
+            context.fillRect(0, 0, 300, 150); // Fill the canvas with blue
+        }
+    </script>
+</body>
+</html>
